@@ -1,16 +1,21 @@
-import { AppPage } from './app.po';
+import { AppPage } from './contact.po';
 import { browser, logging } from 'protractor';
 
-describe('workspace-project App', () => {
+describe('Contact Page', () => {
   let page: AppPage;
 
   beforeEach(() => {
     page = new AppPage();
   });
 
-  it('should display welcome message', async () => {
+  it('should show contact-us works!', async () => {
     await page.navigateTo();
-    expect(await page.getTitleText()).toEqual('my-first-project app is running!');
+    expect(await page.getTitleText()).toEqual('contact-us works!');
+  });
+
+  it('should show correctly!', async () => {
+    await page.navigateTo();
+    expect(await page.getConclusion()).toEqual('13');
   });
 
   afterEach(async () => {

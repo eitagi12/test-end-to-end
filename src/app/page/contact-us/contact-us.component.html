@@ -1,0 +1,15 @@
+<p class="nuscontact">contact-us works!</p>
+<div>
+    <p >ใส่ตัวเลขแรก</p><input value="{{firstInput}}" (change)="getNumber('First', $event)" class="firstInput" >
+    <p >ใส่ตัวเลขที่สอง</p><input value="{{secondInput}}" (change)="getNumber('Second', $event)" class="secondInput" >
+</div>
+<div>
+    <button class="clickCal" (click)="calculateNumber()" >คำนวน</button>
+</div>
+
+<div>
+    ผลลัพท์ <p class="conclusion">{{conclusion}}</p>
+</div>
+<div>
+    ล้าง <button (click)="clearNumber()">X</button>
+</div>
